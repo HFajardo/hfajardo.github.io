@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HCI | Start </title>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link href = "style.css" type="text/css" rel="stylesheet">
+    <style>
+        h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginBox">
+        <br><h1> Begin the Experiment </h1><hr>
+        <p> We will be conducting an experiment to measure the effectiveness of images versus text for user retention. Once you
+            begin, you will be redirected to one of two pages: one text-heavy or one image-heavy. On either of these pages, you will
+            be shown news headlines in either a grid or a list. </p><br>
+        <p> You will have a minute to browse the content on the page and we ask you to try, to the best of your ability, to read 
+            and absorb as much of the information as you can. </p><br>
+        <p> Once time is up, you will be automatically redirected to an exit questionnaire where you will be asked about the 
+            headlines you saw. 
+        </p>
+       
+        <script> 
+        // Randomizes between the two pages once button is clicked
+            var pages = [
+                "text-heavy.html",
+                "image-heavy.html"
+            ];
+
+            function randomPage() {
+                var i = Math.round(Math.random() * (pages.length - 1));
+                window.location.href = pages[i];
+                return false;
+            }
+        </script>
+
+        <br><button onclick= "randomPage()"> Start </button>
+        </form>
+    </div><br><br>
+</body>
+</html>
