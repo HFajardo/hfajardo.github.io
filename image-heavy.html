@@ -21,7 +21,7 @@
             padding-bottom: 13%;
             margin-left: 80%;
         }
-
+    
         .hover-grow {
             display: inline-block;
             vertical-align: middle;
@@ -41,6 +41,7 @@
 
         .branding-bar {
             padding: 12px;
+            overflow: visible;
         }
 
         table {
@@ -84,12 +85,24 @@
                 margin-right: 10px;
                 margin-top: -20px;
             }
+            figcaption {
+                letter-spacing: -2x;
+                line-height: normal;
+                font-weight: bold;
+
+	            text-shadow:
+	            	-1px -1px 0 #000,
+	            	1px -1px 0 #000,
+	            	-1px 1px 0 #000,
+	            	1px 1px 0 #000;
+                }
+
+            
     </style>
 </head>
   <body>
     <nav>
         <a id="logo" href="#">HCI News</a>
-        <a href="#">World</a>
         <a href="#">Politics</a>
         <a href="#">Entertainment</a>
         <a href="#">Travel</a>
@@ -100,48 +113,48 @@
     <table>
         <thead>
             <tr>
-                <th><div class="hover-grow" data-role="tile" data-size="wide" data-cover="img/animals.jpg">
-                    <span class="branding-bar">Humanity has wiped out 60% of animal populations since 1970, report finds</span>
-                </div></th>
+                <th><figure><div class="hover-grow" data-role="tile" data-size="wide" data-cover="img/animals.jpg"> 
+               <figcaption>Humanity has wiped out 60% of animal populations since 1970, report finds</figcaption></figure> </div></th>
 
                 <th><div class="hover-grow"data-role="tile" data-size="wide" data-cover="img/cave-painting.jpg">
-                    <span class="branding-bar">A painting of an animal in an Indonesian cave dates from at least 40,000 years
+                    <figcaption>A painting of an animal in an Indonesian cave dates from at least 40,000 years
                             ago, making it the world's oldest piece of figurative art. The painting in Borneo, possibly depicting a
-                            native type of wild cattle, is among thousands of artworks discovered decades ago in the remote region</span>
+                            native type of wild cattle, is among thousands of artworks discovered decades ago in the remote region</figcaption>
                 </div></th>
                 
                 <th><div class="hover-grow"data-role="tile" data-size="wide"data-cover="img/chick.jpg">
-                    <span class="branding-bar">Every year in Germany 45 million male chicks are shredded or gassed to death because they don't produce eggs. 
-                        Now eggs produced using a new method that isn't so brutal are in supermarkets</span>
+                    <figcaption>Every year in Germany 45 million male chicks are shredded or gassed to death because they don't produce eggs. 
+                        Now eggs produced using a new method that isn't so brutal</figcaption>
                 </div></th>
             </tr>
         </thead>
         <tfoot>
             <tr>
                 <td><div class="hover-grow"data-role="tile" data-size="wide"data-cover="img/china-tiger.jpg">
-                    <span class="branding-bar">China reverses ban on tiger bones and rhino horns</span>
+                    <figcaption>China reverses ban on tiger bones and rhino horns</figcaption>
                 </div></td>
 
                 <td><div class="hover-grow"data-role="tile" data-size="wide" data-cover="img/duck.jpg">
-                    <span class="branding-bar">Duck Boat Captain Indicted In Missouri Lake Accident That Killed 17</span></div>
+                    <figcaption>Duck Boat Captain Indicted In Missouri Lake Accident That Killed 17</figcaption></div>
                 </td>
 
                 <td><div class="hover-grow"data-role="tile" data-size="wide" data-cover="img/plane.jpg">
-                    <span class="branding-bar">France grounds Ryanair plane with 149 on board over long-running subsidies dispute</span></div></div></td>
+                    <figcaption>France grounds Ryanair plane with 149 on board over long-running subsidies dispute</figcaption></div></div></td>
             </tr>
         </tfoot>
         <tbody>
             <tr>
                 <th><div class="hover-grow"data-role="tile" data-size="wide" data-cover="img/red-dwarf.jpg">
-                    <span class="branding-bar">Astronomers spot one of the oldest stars in the entire universe. And the 13.5-billion-year-old red dwarf just so happens to reside right here in the Milky Way</span></div>
+                    <figcaption>Astronomers spot one of the oldest stars in the entire universe. And the 13.5-billion-year-old 
+                        red dwarf just so happens to reside right here in the Milky Way</figcaption></div>
                 </th>
                 
                 <th><div class="hover-grow"data-role="tile" data-size="wide" data-cover="img/utah.jpeg">
-                    <span class="branding-bar">Family gives warning about bats after man becomes Utah’s first fatal rabies case in over 70 years</span></div>
+                    <figcaption>Family gives warning about bats after man becomes Utah’s first fatal rabies case in over 70 years</figcaption></div>
                 </th>
 
                 <th><div class="hover-grow"data-role="tile" data-size="wide" data-cover="img/hot-duck.jpg">
-                    <span class="branding-bar">Mandarin mania: how a 'hot duck' enraptured New York City</span></div>
+                    <figcaption>Mandarin mania: how a 'hot duck' enraptured New York City</figcaption></div>
                 </th>
             </tr>
         </tbody>
@@ -153,7 +166,7 @@
           
           <!--Start of Countdown --> 
           <h3>
-            Redirecting to Survey in <span id="countdown">60</span> seconds
+            <span id="countdown">60</span>
           </h3>
           <!-- JavaScript part -->
           <script type="text/javascript">
@@ -165,7 +178,7 @@
                   seconds = seconds - 1;
                   if (seconds < 0) {
                       // Change your redirection link here
-                      window.location = "survey.html";
+                      window.location = "https://www.surveymonkey.com/r/N5TZ5KM";
                   } else {
                       // Update remaining seconds
                       document.getElementById("countdown").innerHTML = seconds;
@@ -177,7 +190,7 @@
               // Run countdown function
               countdown(); 
           </script>
-          <!--End of Countdown-->\
+          <!--End of Countdown-->
 
 
 
